@@ -3,7 +3,7 @@ const fs = require("fs");
 const client = new Discord.Client();
 const { token } = require("./config.json")
 const prefix = 'do '
-const help = "coffeerate: rates your coffee\ncoffeebeg: beg for coffeebeg\nping: Find out!\ngoogle: get me to google something\nkick: kick a user from the server\nhi: make me say hi to you\nhelp: bring up this menu"
+const help = "coffeerate: rates your coffee\ncoffeebeg: beg for coffee\nping: Find out!\ngoogle: get me to google something\nkick: kick a user from the server\nhi: make me say hi to you\nhelp: bring up this menu"
 const author = "UnityH#2310"
 
 
