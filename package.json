@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@discordjs/opus": "^0.6.0",
+    "@tensorflow/tfjs-node": "^3.9.0",
+    "axios": "^0.21.4",
+    "discord-reply": "^0.1.2",
+    "discord-voice": "^2.0.4",
+    "discord.js": "^12.5.3",
+    "ffmpeg-static": "^4.4.0",
+    "images-scraper": "^6.3.0",
+    "nsfwjs": "^2.4.1",
+    "twitter.js": "^0.4.0",
+    "yt-search": "^2.10.1",
+    "ytdl": "^1.4.1",
+    "ytdl-core": "^4.9.1",
+    "ytsearch": "^1.0.4"
+  }
+}

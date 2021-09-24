@@ -53,13 +53,16 @@ client.on("message", message => {
         client.commands.get("shutdown").execute(message, args);
     }
 
-    else if (command === "music") {
-        client.commands.get("music").execute(message, args, Discord);
+    else if (command === "play") {
+        client.commands.get("play").execute(message, args, Discord);
     }
-
     else if (command === "chess") {
         client.commands.get("chess").execute(message, args, client);
     }
+
+    else if (command === "image") {
+        client.commands.get("image").execute(message, args, Discord);
+    } 
 }); 
 
 
