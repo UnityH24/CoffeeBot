@@ -1,7 +1,8 @@
 /* requires */
 const fs = require("fs");
 const Discord = require("discord.js");
-const { token } = require("./config.json")
+const { token } = require("./config.json");
+const { time, timeEnd } = require("console");
 require("discord-reply");
 
 /* constants used all over the program */
@@ -24,7 +25,7 @@ client.once("ready", () => {
 });
 
 client.on("message", message => {
-    if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
+    if ((!message.content.toLowerCase().startsWith(prefix) || message.author.bot) && message.author.id == 309715097755058176) return;
 
     var args = message.content.slice(prefix.length).split(/ /);
     var command = args.shift().toLowerCase();
@@ -63,6 +64,14 @@ client.on("message", message => {
     else if (command === "image") {
         client.commands.get("image").execute(message, args, Discord);
     } 
+
+    else if (command === "letters") {
+        client.commands.get("letters").execute(message, args)
+    }
+
+    else if (["fizzbuzz", "fb"].includes(command)) {
+        client.commands.get("fizzbuzz").execute(message, args)
+    }
 }); 
 
 
