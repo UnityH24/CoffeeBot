@@ -95,7 +95,10 @@ module.exports = {
             default: {
                 return message.channel.send(rickRollEmbed);
             }
+			
         }
+		
+		return message.channel.send(imageEmbed);
 
     }
 }
